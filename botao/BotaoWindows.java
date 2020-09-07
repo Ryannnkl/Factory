@@ -10,22 +10,22 @@ import javax.swing.*;
  */
 
 public class BotaoWindows implements Botao {
-    JPanel panel = new JPanel();
+    JPanel painel = new JPanel();
     JFrame frame = new JFrame();
     JButton botao;
 
     public void criar() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JLabel label = new JLabel("Ola mundo!");
-        label.setOpaque(true);
-        label.setBackground(new Color(235, 233, 126));
-        label.setFont(new Font("Dialog", Font.BOLD, 44));
-        label.setHorizontalAlignment(SwingConstants.CENTER);
-        panel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        frame.getContentPane().add(panel);
-        panel.add(label);
+        JLabel texto = new JLabel("Ola mundo!");
+        texto.setOpaque(true);
+        texto.setBackground(new Color(235, 233, 126));
+        texto.setFont(new Font("Dialog", Font.BOLD, 44));
+        texto.setHorizontalAlignment(SwingConstants.CENTER);
+        painel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        frame.getContentPane().add(painel);
+        painel.add(texto);
         aoClicar();
-        panel.add(botao);
+        painel.add(botao);
 
         frame.setSize(320, 200);
         frame.setVisible(true);

@@ -10,7 +10,7 @@ public class Principal {
 
     public static void main(String[] args) {
         configurar();
-        runBusinessLogic();
+        rodarLogicaFinal();
     }
     
     static void configurar() {
@@ -22,7 +22,7 @@ public class Principal {
         }
     }
     
-    static void runBusinessLogic() {
+    static void rodarLogicaFinal() {
         dialogo.renderizarJanela();
     }
 }

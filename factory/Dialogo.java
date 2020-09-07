@@ -14,10 +14,6 @@ public abstract class Dialogo {
         Botao okBotao = criarBotao();
         okBotao.criar();
     }
-
-    /**
-     * Subclasses will override this method in order to create specific button
-     * objects.
-     */
+    
     public abstract Botao criarBotao();
 }
